@@ -1,6 +1,17 @@
 {
   "name": "tmsm",
   "author": "https://github.com/WT2024",
+  "version": "dev-0.0.1",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "nodemonConfig": {
+    "watch": ["src/"],
+    "exec": "ts-node src/app.ts",
+    "ext": "ts"
+  },
   "dependencies": {
     "@types/koa": "^2.15.0",
     "@types/koa-router": "^7.4.8",
@@ -9,5 +20,8 @@
     "koa-router": "^13.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
