@@ -1,19 +1,10 @@
 import os from 'os';
+import { User } from './UsersResponse';
 export interface OverviewResponse {
     name: string;
     version: string;
-    nowUser: {
-        userId: number;
-        userName: string;
-        userType: string;
-        password: string;
-    };
+    nowUser: User;
     cpus: os.CpuInfo[];
     totalMem: string;
     usedMem: string;
-    application: {
-        name: string;
-        type: string;
-        flag: string;
-    }[];
 };

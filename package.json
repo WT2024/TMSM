@@ -1,14 +1,14 @@
 {
   "name": "tmsm",
   "author": "https://github.com/WT2024",
-  "version": "dev-0.0.1",
+  "version": "dev-0.0.1.1",
   "scripts": {
     "dev": "nodemon",
     "build": "tsc",
     "start": "node dist/app.js"
   },
   "nodemonConfig": {
-    "watch": ["src/"],
+    "watch": ["src/routers/", "src/app.ts"],
     "exec": "ts-node src/app.ts",
     "ext": "ts"
   },
